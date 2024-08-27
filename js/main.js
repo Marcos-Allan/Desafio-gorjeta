@@ -35,7 +35,7 @@ function calculatePayment(btn) {
     console.log(btn.value)
     console.log(((inputValue.value / 100) * Number(btn.value.slice(0, -1))))
 
-    const valuePay = (Number(inputValue.value) + Number((inputValue.value / 100) * Number(btn.value.slice(0, -1)))).toFixed(2)
+    const valuePay = (Number(inputValue.value) * Number((inputValue.value / 100) * Number(btn.value.slice(0, -1)))).toFixed(2)
 
     message.innerText = `Obrigada por pagar e nos dar a gorjeta de ${btn.value}
     `
@@ -76,6 +76,4 @@ btnPay.addEventListener('click', () => {
     modal.style.zIndex = '3'
     modal.style.opacity = '1';
     modalBox.style.transform = 'translateY(0px)';
-
-    calculatePayment(buttonsDesconts[2])
 })
