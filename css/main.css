@@ -1,0 +1,184 @@
+:root {
+    --color1: #0D0D0D;
+    --color2: #F2F2F2;
+    --color3: #2C403E;
+    --color4: #648C8C;
+    --color5: #8FBFBF;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    background-color: var(--color2);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body > h1 {
+    color: var(--color4);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    width: 300px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+body > form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 4px;
+    border-radius: 12px;
+    background-color: var(--color3);
+    width: 80%;
+    max-width: 500px;
+}
+
+body > form > input[type="number"] {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--color4);
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 1.2em;
+}
+
+body > form > div.line {
+    background-color: var(--color4);
+    width: 100%;
+    height: 2px;
+    margin: 6px 0px;
+}
+
+body > form > input[type="submit"] {
+    flex-grow: 1;
+    background-color: var(--color4);
+    border: 1px solid var(--color4);
+    color: var(--color2);
+    outline: none;
+    padding: 4px 0px;
+    border-radius: 4px;
+    transition: all;
+    transition-duration: .4s;
+    font-size: 1.1em;
+    font-weight: bolder;
+
+    &:hover {
+        background-color: transparent;
+        border-color: var(--color3);
+        color: var(--color3);
+    }
+}
+
+body > div#res {
+    width: 80%;
+    height: 500px;
+    max-width: 500px;
+}
+
+body > div#res > h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+body > div#res > p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+body > div#res > p > span.payValue {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--color3);
+}
+
+body > button#btnPay {
+    width: 80%;
+    max-width: 500px;
+    bottom: 0px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 1.3em;
+    position: absolute;
+    padding: 8px;
+    cursor: pointer;
+    border:1px solid var(--color4);
+    background-color: var(--color4);
+    color: var(--color2);
+    text-align: center;
+    transition: all;
+    transition-duration: .3s;
+    
+    &:hover {
+        background-color: var(--color2);
+        color: var(--color4);
+        border: 1px solid var(--color4);
+    }
+}
+
+body > div#modal {
+    z-index: -1;
+    transition: all;
+    transition-duration: .3s;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #00000079;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > div#modal > form#modalBox {
+    background-color: var(--color2);
+    border-radius: 6px;
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-800px);
+    transition: all;
+    transition-duration: .3s;
+    align-items: center;
+}
+
+body > div#modal > form#modalBox > p {
+    color: var(--color1);
+    margin-bottom: 10px;
+} 
+
+body > div#modal > form#modalBox > input[type="submit"] {
+    border: 1px solid var(--color4);
+    background-color: var(--color4);
+    width: 100%;
+    padding: 6px 0px;
+    color: var(--color2);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: .3s;
+    text-transform: uppercase;
+    color: var(--color2);
+    outline: none;
+    
+    &:hover {
+        border: 1px solid var(--color4);
+        background-color: var(--color2);
+        color: var(--color4);
+    }
+}
