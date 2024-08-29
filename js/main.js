@@ -8,7 +8,7 @@ const btnPay = document.querySelector('#btnPay')
 const modal = document.querySelector('#modal')
 const molBox = document.querySelector('#modalBox')
 
-let choiceGorjeta = 0
+let choaaaiceGorjeta = 0
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
