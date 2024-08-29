@@ -40,7 +40,7 @@ function calculatePayment(btn) {
     message.innerText = `Obrigada por pagar e nos dar a gorjeta de ${btn.value}
     `
     paymentRes.innerHTML = `o valor da conta a ser pagar ficou em: <br> <span class="payValue">R$
-    ${String(valuePay).replace('.',',')}<span>`
+    ${String(20).replace('.',',')}<span>`
 }
 
 buttonsDesconts.map((btn) => {
