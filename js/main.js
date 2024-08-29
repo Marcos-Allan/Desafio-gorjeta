@@ -6,7 +6,7 @@ const message = document.querySelector('#message')
 const paymentRes = document.querySelector('#paymentRes')
 const btnPay = document.querySelector('#btnPay')
 const modal = document.querySelector('#modal')
-const modalBox = document.querySelector('#modalBox')
+const molBox = document.querySelector('#modalBox')
 
 let choiceGorjeta = 0
 
